@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "./photos";
+import Navbar from './Navbar'
 
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -15,6 +16,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    backgroundColor: "white"
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -27,7 +29,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function Resume() {
+function Portfolio() {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -43,19 +45,9 @@ function Resume() {
   const classes = useStyles();
   return (
     <div className={classes.background}>
+      <Navbar></Navbar>
       <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            News
-          </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
-    </div>
+      </div>
 
       <Gallery photos={photos} direction={"column"} onClick={openLightbox} />
       <ModalGateway>
@@ -75,4 +67,4 @@ function Resume() {
     </div>
   );
 }
-export default Resume
+export default Portfolio

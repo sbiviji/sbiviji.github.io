@@ -10,26 +10,30 @@ import {
     List,
     Typography, 
     Box,
-    ListItemIcon
+    ListItemIcon,
+    Button
 } from "@material-ui/core"
 import {
     ArrowBack,
     AssignmentInd,
     Home,
     Apps,
-    ContactMail
+    ContactMail,
+    Opacity
 } from "@material-ui/icons"
 import avatar from '../avatar.jpg'
 import {makeStyles} from '@material-ui/core/styles'
 import MobilRightMenuSlider from "@material-ui/core/Drawer"
 import {Link} from 'react-router-dom'
+import MenuIcon from "@material-ui/icons/Menu"
 
 // CSS STYLES 
 const useStyles = makeStyles(theme=>({
     menuSliderContainer: {
         width: 250,
         background: "#511",
-        height: "100%"
+        height: "100%",
+        Opacity: "50%"
     },
     avatar: {
         display: "block", 
@@ -39,6 +43,17 @@ const useStyles = makeStyles(theme=>({
     },
     listItem: {
         color: "tan"
+    },
+    menuButton: {
+        fontFamily: "Open Sans, sans-serif",
+        fontWeight: 700,
+        size: "18px",
+        marginLeft: "38px",
+    },
+    toolbar: {
+        display: "flex",
+        justifyContent: "right",
+        marginLeft: "auto"
     }
 }));
 
@@ -49,17 +64,19 @@ const menuItems = [
         listPath: "/"
     },
     {
-        listIcon: <AssignmentInd/>,
-        listText: "Resume",
-        listPath: "/resume"
+        listIcon: <Apps/>,
+        listText: "Portfolio",
+        listPath: "/portfolio"
     },
     {
-        listIcon: <Apps/>,
-        listText: "Gallery"
+        listIcon: <AssignmentInd/>,
+        listText: "About Me",
+        listPath: "/aboutme"
     },
     {
         listIcon: <ContactMail/>,
-        listText: "Contact"
+        listText: "Contact",
+        listPath: "/contact"
     }
 ]
 
@@ -94,17 +111,24 @@ const Navbar = () => {
     return (
         <>
         <Box component='nav'>
-            <AppBar position='fixed' style={{background: '#222'}}>
+            <AppBar position='fixed' style={{background: 'black', opacity: '0.75'}}>
                 <Toolbar>
                     <IconButton onClick={toggleSlider("right", true)}>
-                        <ArrowBack style={{color: 'tomato'}}></ArrowBack>
+                        <MenuIcon style={{color: 'white'}}></MenuIcon>
                     </IconButton>
-                    <Typography variant="h5" style={{color: 'tan'}}>
+                    <Typography variant="h5" style={{color: 'white'}}>
                         SBVG Photography
                     </Typography>
                     <MobilRightMenuSlider open={state.right} anchor="right" onClose={toggleSlider("right",false)}>
                         {sideList("right")}
                     </MobilRightMenuSlider>
+                    <div className={classes.toolbar}>
+                        {menuItems.map((lsItem, key)=>(
+                        <Button color="inherit" key = {key} component={Link} to={lsItem.listPath} className={classes.menuButton}>
+                            {lsItem.listText}
+                        </Button>
+                        ))}
+                    </div>
                 </Toolbar>
             </AppBar>
         </Box>

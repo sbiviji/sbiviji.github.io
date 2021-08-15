@@ -1,9 +1,9 @@
-import meera from '../DSCF3035.jpg'
-import nathan from '../DSCF3058.jpg'
-import peifu from '../DSCF3045.jpg'
-import sarah from '../IMG_0930.jpg'
-import sarah_portrait from '../IMG_0832-psp.jpg'
-import neha from '../DSCF3091.jpg'
+import meera from '../images/DSCF3035.jpg'
+import nathan from '../images/DSCF3058.jpg'
+import peifu from '../images/DSCF3045.jpg'
+import sarah from '../images/IMG_0930.jpg'
+import sarah_portrait from '../images/IMG_0832-psp.jpg'
+import neha from '../images/DSCF3091.jpg'
 export const photos = [
     {
       src: meera,
