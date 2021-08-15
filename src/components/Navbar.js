@@ -22,6 +22,7 @@ import {
 import avatar from '../avatar.jpg'
 import {makeStyles} from '@material-ui/core/styles'
 import MobilRightMenuSlider from "@material-ui/core/Drawer"
+import {Link} from 'react-router-dom'
 
 // CSS STYLES 
 const useStyles = makeStyles(theme=>({
@@ -44,19 +45,21 @@ const useStyles = makeStyles(theme=>({
 const menuItems = [
     {
         listIcon: <Home/>,
-        listText: "Home"
+        listText: "Home",
+        listPath: "/"
     },
     {
         listIcon: <AssignmentInd/>,
-        listText: "Resume"
+        listText: "Resume",
+        listPath: "/resume"
     },
     {
         listIcon: <Apps/>,
-        listText: "Portfolio"
+        listText: "Gallery"
     },
     {
         listIcon: <ContactMail/>,
-        listText: "Contacts"
+        listText: "Contact"
     }
 ]
 
@@ -77,7 +80,7 @@ const Navbar = () => {
             <Divider></Divider>
             <List>
                 {menuItems.map((lsItem, key)=>(
-                <ListItem button>
+                <ListItem button key = {key} component={Link} to={lsItem.listPath}>
                     <ListItemIcon className = {classes.listItem}>
                         {lsItem.listIcon}
                     </ListItemIcon>
@@ -91,13 +94,13 @@ const Navbar = () => {
     return (
         <>
         <Box component='nav'>
-            <AppBar position='static' style={{background: '#222'}}>
+            <AppBar position='fixed' style={{background: '#222'}}>
                 <Toolbar>
                     <IconButton onClick={toggleSlider("right", true)}>
                         <ArrowBack style={{color: 'tomato'}}></ArrowBack>
                     </IconButton>
                     <Typography variant="h5" style={{color: 'tan'}}>
-                        Portfolio
+                        SBVG Photography
                     </Typography>
                     <MobilRightMenuSlider open={state.right} anchor="right" onClose={toggleSlider("right",false)}>
                         {sideList("right")}
