@@ -61,7 +61,7 @@ const menuItems = [
     {
         listIcon: <Home/>,
         listText: "Home",
-        listPath: "/"
+        listPath: "/sbvg"
     },
     {
         listIcon: <Apps/>,
