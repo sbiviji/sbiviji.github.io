@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/sbvg/static/css/main.f2bbd1a3.chunk.css",
+    "main.js": "/sbvg/static/js/main.04a20291.chunk.js",
+    "main.js.map": "/sbvg/static/js/main.04a20291.chunk.js.map",
+    "runtime-main.js": "/sbvg/static/js/runtime-main.2b606574.js",
+    "runtime-main.js.map": "/sbvg/static/js/runtime-main.2b606574.js.map",
+    "static/js/2.5f7e3ec9.chunk.js": "/sbvg/static/js/2.5f7e3ec9.chunk.js",
+    "static/js/2.5f7e3ec9.chunk.js.map": "/sbvg/static/js/2.5f7e3ec9.chunk.js.map",
+    "static/js/3.0d54e541.chunk.js": "/sbvg/static/js/3.0d54e541.chunk.js",
+    "static/js/3.0d54e541.chunk.js.map": "/sbvg/static/js/3.0d54e541.chunk.js.map",
+    "index.html": "/sbvg/index.html",
+    "static/css/main.f2bbd1a3.chunk.css.map": "/sbvg/static/css/main.f2bbd1a3.chunk.css.map",
+    "static/js/2.5f7e3ec9.chunk.js.LICENSE.txt": "/sbvg/static/js/2.5f7e3ec9.chunk.js.LICENSE.txt",
+    "static/media/AboutMe.0461dad1.JPG": "/sbvg/static/media/AboutMe.0461dad1.JPG",
+    "static/media/DSCF3035.19ee22fc.jpg": "/sbvg/static/media/DSCF3035.19ee22fc.jpg",
+    "static/media/DSCF3045.9d06ea5b.jpg": "/sbvg/static/media/DSCF3045.9d06ea5b.jpg",
+    "static/media/DSCF3058.71d360e6.jpg": "/sbvg/static/media/DSCF3058.71d360e6.jpg",
+    "static/media/DSCF3091.1d39efc2.jpg": "/sbvg/static/media/DSCF3091.1d39efc2.jpg",
+    "static/media/IMG_0832-psp.f2ba7b3e.jpg": "/sbvg/static/media/IMG_0832-psp.f2ba7b3e.jpg",
+    "static/media/IMG_0930.d852e53e.jpg": "/sbvg/static/media/IMG_0930.d852e53e.jpg",
+    "static/media/avatar.e0b8300b.jpg": "/sbvg/static/media/avatar.e0b8300b.jpg",
+    "static/media/chicago_building.acce8b06.jpeg": "/sbvg/static/media/chicago_building.acce8b06.jpeg",
+    "static/media/contact.99afacfe.JPG": "/sbvg/static/media/contact.99afacfe.JPG",
+    "static/media/nabiha_face.59352588.jpeg": "/sbvg/static/media/nabiha_face.59352588.jpeg",
+    "static/media/nabiha_lights.16ad602b.jpeg": "/sbvg/static/media/nabiha_lights.16ad602b.jpeg",
+    "static/media/nabiha_red.4ccd7bee.jpeg": "/sbvg/static/media/nabiha_red.4ccd7bee.jpeg",
+    "static/media/nabiha_theater.ef41dcdf.jpeg": "/sbvg/static/media/nabiha_theater.ef41dcdf.jpeg",
+    "static/media/App.css": "/sbvg/static/media/train.3609c960.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b606574.js",
+    "static/js/2.5f7e3ec9.chunk.js",
+    "static/css/main.f2bbd1a3.chunk.css",
+    "static/js/main.04a20291.chunk.js"
+  ]
+}
