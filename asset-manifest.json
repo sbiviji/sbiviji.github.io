@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/sbvg/static/css/main.f2bbd1a3.chunk.css",
-    "main.js": "/sbvg/static/js/main.573e5177.chunk.js",
-    "main.js.map": "/sbvg/static/js/main.573e5177.chunk.js.map",
+    "main.js": "/sbvg/static/js/main.96ffb1a7.chunk.js",
+    "main.js.map": "/sbvg/static/js/main.96ffb1a7.chunk.js.map",
     "runtime-main.js": "/sbvg/static/js/runtime-main.2b606574.js",
     "runtime-main.js.map": "/sbvg/static/js/runtime-main.2b606574.js.map",
-    "static/js/2.5f7e3ec9.chunk.js": "/sbvg/static/js/2.5f7e3ec9.chunk.js",
-    "static/js/2.5f7e3ec9.chunk.js.map": "/sbvg/static/js/2.5f7e3ec9.chunk.js.map",
+    "static/js/2.e6021601.chunk.js": "/sbvg/static/js/2.e6021601.chunk.js",
+    "static/js/2.e6021601.chunk.js.map": "/sbvg/static/js/2.e6021601.chunk.js.map",
     "static/js/3.0d54e541.chunk.js": "/sbvg/static/js/3.0d54e541.chunk.js",
     "static/js/3.0d54e541.chunk.js.map": "/sbvg/static/js/3.0d54e541.chunk.js.map",
     "index.html": "/sbvg/index.html",
     "static/css/main.f2bbd1a3.chunk.css.map": "/sbvg/static/css/main.f2bbd1a3.chunk.css.map",
-    "static/js/2.5f7e3ec9.chunk.js.LICENSE.txt": "/sbvg/static/js/2.5f7e3ec9.chunk.js.LICENSE.txt",
-    "static/media/AboutMe.0461dad1.JPG": "/sbvg/static/media/AboutMe.0461dad1.JPG",
+    "static/js/2.e6021601.chunk.js.LICENSE.txt": "/sbvg/static/js/2.e6021601.chunk.js.LICENSE.txt",
+    "static/media/AboutMe.1fc045f7.JPG": "/sbvg/static/media/AboutMe.1fc045f7.JPG",
     "static/media/DSCF3035.19ee22fc.jpg": "/sbvg/static/media/DSCF3035.19ee22fc.jpg",
     "static/media/DSCF3045.9d06ea5b.jpg": "/sbvg/static/media/DSCF3045.9d06ea5b.jpg",
     "static/media/DSCF3058.71d360e6.jpg": "/sbvg/static/media/DSCF3058.71d360e6.jpg",
@@ -22,6 +22,7 @@
     "static/media/avatar.e0b8300b.jpg": "/sbvg/static/media/avatar.e0b8300b.jpg",
     "static/media/chicago_building.acce8b06.jpeg": "/sbvg/static/media/chicago_building.acce8b06.jpeg",
     "static/media/contact.99afacfe.JPG": "/sbvg/static/media/contact.99afacfe.JPG",
+    "static/media/flowers-psp.1e124f59.jpg": "/sbvg/static/media/flowers-psp.1e124f59.jpg",
     "static/media/nabiha_face.59352588.jpeg": "/sbvg/static/media/nabiha_face.59352588.jpeg",
     "static/media/nabiha_lights.16ad602b.jpeg": "/sbvg/static/media/nabiha_lights.16ad602b.jpeg",
     "static/media/nabiha_red.4ccd7bee.jpeg": "/sbvg/static/media/nabiha_red.4ccd7bee.jpeg",
@@ -30,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2b606574.js",
-    "static/js/2.5f7e3ec9.chunk.js",
+    "static/js/2.e6021601.chunk.js",
     "static/css/main.f2bbd1a3.chunk.css",
-    "static/js/main.573e5177.chunk.js"
+    "static/js/main.96ffb1a7.chunk.js"
   ]
 }
