@@ -21,11 +21,11 @@ import {
     ContactMail,
     Opacity
 } from "@material-ui/icons"
-import avatar from '../avatar.jpg'
 import {makeStyles} from '@material-ui/core/styles'
 import MobilRightMenuSlider from "@material-ui/core/Drawer"
 import {Link} from 'react-router-dom'
 import MenuIcon from "@material-ui/icons/Menu"
+import logo from '../sbvg_inverted.png'
 
 // CSS STYLES 
 const useStyles = makeStyles(theme=>({
@@ -38,11 +38,11 @@ const useStyles = makeStyles(theme=>({
     avatar: {
         display: "block", 
         margin: "0.5rem auto",
-        width: theme.spacing(13),
+        width: "auto",
         height: theme.spacing(13)
     },
     listItem: {
-        color: "tan"
+        color: "white"
     },
     menuButton: {
         fontFamily: "Open Sans, sans-serif",
@@ -54,6 +54,9 @@ const useStyles = makeStyles(theme=>({
         display: "flex",
         justifyContent: "right",
         marginLeft: "auto"
+    },
+    logoButton: {
+        maxHeight: "70px"
     }
 }));
 
@@ -93,7 +96,7 @@ const Navbar = () => {
 
     const sideList = slider =>(
         <Box className={classes.menuSliderContainer} component="div" onclick={toggleSlider(slider,false)}>
-            <Avatar className = {classes.avatar} src={avatar} alt="Shazeen"></Avatar>
+            <img className = {classes.avatar} src={logo} alt="Shazeen"></img>
             <Divider></Divider>
             <List>
                 {menuItems.map((lsItem, key)=>(
@@ -116,8 +119,10 @@ const Navbar = () => {
                     <IconButton onClick={toggleSlider("right", true)}>
                         <MenuIcon style={{color: 'white'}}></MenuIcon>
                     </IconButton>
+                    <Button component={Link} to={"/sbvg"}>
+                        <img src={logo} className={classes.logoButton}></img>
+                    </Button>
                     <Typography variant="h5" style={{color: 'white'}}>
-                        SBVG Photography
                     </Typography>
                     <MobilRightMenuSlider open={state.right} anchor="right" onClose={toggleSlider("right",false)}>
                         {sideList("right")}

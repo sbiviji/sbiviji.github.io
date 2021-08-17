@@ -2,12 +2,12 @@ import React from 'react'
 import Navbar from './Navbar'
 import Header from './Header'
 import {makeStyles} from '@material-ui/core/styles'
-import train from '../images/train.jpeg'
+import flowers from '../IMG_0609.JPG'
 
 
 const useStyles = makeStyles(theme => ({
     background: {
-        backgroundImage: `url(${train})`,
+        backgroundImage: `url(${flowers})`,
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
