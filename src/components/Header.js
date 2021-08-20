@@ -20,8 +20,10 @@ const useStyles = makeStyles(theme => ({
         width: theme.spacing(15),
         height: theme.spacing(15),
         margin: theme.spacing(1),
+        minWidth: "320px",
+        width: "100%",
         height: "auto",
-        width: "100%"
+        minHeight: "auto"
     },
     title: {
         color: "white",
@@ -62,12 +64,14 @@ const Header = () => {
             <Grid container justify="center" alignContent="center">
                 <img src={avatar} alt="Shazeen" className = {classes.avatar}></img>
             </Grid>
+            <Grid item xs={12} justify="center">
             <Button variant="outlined" color="inherit" component={Link} to={"/portfolio"} className={classes.menuButton}>
                 Explore my work
             </Button>
             <Button variant="outlined" color="inherit" component={Link} to={"/contact"} className={classes.menuButton}>
                 Let's get in touch
             </Button>
+            </Grid>
             
         </Box>
        

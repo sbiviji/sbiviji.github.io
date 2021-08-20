@@ -23,7 +23,7 @@ import {
 } from "@material-ui/icons"
 import {makeStyles} from '@material-ui/core/styles'
 import MobilRightMenuSlider from "@material-ui/core/Drawer"
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import MenuIcon from "@material-ui/icons/Menu"
 import logo from '../sbvg_inverted.png'
 import useMediaQuery from "@material-ui/core/useMediaQuery"
@@ -47,13 +47,17 @@ const useStyles = makeStyles(theme=>({
         height: theme.spacing(13)
     },
     listItem: {
-        color: "white"
+        color: "white",
     },
     menuButton: {
         fontFamily: "Open Sans, sans-serif",
         fontWeight: 700,
         size: "18px",
         marginLeft: "38px",
+        "&.active": {
+            background:'white',
+            color: 'black'
+        },
     },
     toolbar: {
         display: "flex",
@@ -70,6 +74,12 @@ const useStyles = makeStyles(theme=>({
         [theme.breakpoints.down('sm')]:{
             marginLeft: "auto"
         }
+    },
+    pageName: {
+        fontFamily: "Open Sans, sans-serif",
+        fontWeight: 700,
+        size: "20px",
+        textTransform: "uppercase"
     }
 }));
 
@@ -119,7 +129,7 @@ const Navbar = () => {
             <Divider></Divider>
             <List>
                 {menuItems.map((lsItem, key)=>(
-                <ListItem button key = {key} component={Link} to={lsItem.listPath}>
+                <ListItem button key = {key} component={NavLink} to={lsItem.listPath}>
                     <ListItemIcon className = {classes.listItem}>
                         {lsItem.listIcon}
                     </ListItemIcon>
@@ -136,13 +146,12 @@ const Navbar = () => {
             <AppBar position='fixed' style={{background: 'black', opacity: '0.75'}}>
                 <Toolbar>
                     
-                    <Button component={Link} to={"/sbvg"}>
-                        <img src={logo} className={classes.logoButton}></img>
-                    </Button>
-                    <Typography variant="h5" style={{color: 'white'}}>
-                    </Typography>
+                    
                     {isMatch ? (
                         <>
+                        {menuItems.map((lsItem, key)=>(
+                            <Typography className = {classes.pageName}>{window.location.pathname == lsItem.listPath ? lsItem.listText : ""}</Typography>
+                        ))}
                         <IconButton className = {classes.menuIconSliderButton} onClick={toggleSlider("right", true)}>
                             <MenuIcon style={{color: 'white'}}></MenuIcon>
                         </IconButton>
@@ -151,13 +160,20 @@ const Navbar = () => {
                         </MobilRightMenuSlider>
                         </>
                     ) : (
+                    <>
+                    <Button component={NavLink} to={"/sbvg"}>
+                    <img src={logo} className={classes.logoButton}></img>
+                    </Button>
+                    <Typography variant="h5" style={{color: 'white'}}>
+                    </Typography>
                     <div className={classes.toolbar}>
                         {menuItems.map((lsItem, key)=>(
-                        <Button color="inherit" key = {key} component={Link} to={lsItem.listPath} className={classes.menuButton}>
+                        <Button color="inherit" key = {key} component={NavLink} to={lsItem.listPath} className={classes.menuButton}>
                             {lsItem.listText}
                         </Button>
                         ))}
                     </div> 
+                    </>
                     )}
                 </Toolbar>
             </AppBar>
