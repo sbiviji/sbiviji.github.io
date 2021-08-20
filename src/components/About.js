@@ -2,7 +2,9 @@ import React from 'react'
 import Navbar from './Navbar'
 import { makeStyles } from '@material-ui/core/styles';
 import Box from "@material-ui/core/Box"
+import Grid from "@material-ui/core/Grid"
 import me from '../AboutMe.JPG'
+import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -29,6 +31,9 @@ const About = () => {
             <Navbar></Navbar>
             <Box className={classes.root}>
             </Box>
+            <Grid item xs={6}>
+                <Typography></Typography>
+            </Grid>
         </div>
     )
 }

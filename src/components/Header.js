@@ -20,8 +20,8 @@ const useStyles = makeStyles(theme => ({
         width: theme.spacing(15),
         height: theme.spacing(15),
         margin: theme.spacing(1),
-        height: "85%",
-        width: "85%"
+        height: "auto",
+        width: "100%"
     },
     title: {
         color: "white",
@@ -48,7 +48,9 @@ const useStyles = makeStyles(theme => ({
         color: "white",
         fontSize: "20px",
         outline: "white",
-        backgroundColor: "transparent"
+        backgroundColor: "transparent",
+        padding: "15px",
+        margin: "5px"
     },
 }));
 
@@ -57,19 +59,16 @@ const Header = () => {
     return (
         
         <Box className = {classes.typedContainer}>
-            <Grid container justify="center">
+            <Grid container justify="center" alignContent="center">
                 <img src={avatar} alt="Shazeen" className = {classes.avatar}></img>
             </Grid>
-            <Typography variant="h3" className = {classes.title}>
-            </Typography>
-            <Typography variant="h5" className = {classes.subtitle}>
-            </Typography>
             <Button variant="outlined" color="inherit" component={Link} to={"/portfolio"} className={classes.menuButton}>
                 Explore my work
             </Button>
             <Button variant="outlined" color="inherit" component={Link} to={"/contact"} className={classes.menuButton}>
                 Let's get in touch
             </Button>
+            
         </Box>
        
     )

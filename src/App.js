@@ -6,6 +6,7 @@ import About from './components/About.js'
 import Contact from './components/Contact.js'
 import {Route} from 'react-router-dom'
 
+
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
         <Route path='/about' component={About}></Route>
         <Route path='/contact' component={Contact}></Route>
       </CssBaseline>
+
     </>
   );
 }

@@ -26,6 +26,8 @@ import MobilRightMenuSlider from "@material-ui/core/Drawer"
 import {Link} from 'react-router-dom'
 import MenuIcon from "@material-ui/icons/Menu"
 import logo from '../sbvg_inverted.png'
+import useMediaQuery from "@material-ui/core/useMediaQuery"
+import {useTheme} from "@material-ui/core/styles"
 
 // CSS STYLES 
 const useStyles = makeStyles(theme=>({
@@ -33,7 +35,10 @@ const useStyles = makeStyles(theme=>({
         width: 250,
         background: "black",
         height: "100%",
-        Opacity: "50%"
+        Opacity: "50%",
+        [theme.breakpoints.down('sm')]:{
+            maxHeight: "auto"
+        }
     },
     avatar: {
         display: "block", 
@@ -56,7 +61,15 @@ const useStyles = makeStyles(theme=>({
         marginLeft: "auto"
     },
     logoButton: {
-        maxHeight: "70px"
+        maxHeight: "70px",
+        [theme.breakpoints.down('sm')]:{
+            display: "none"
+        }
+    },
+    menuIconSliderButton: {
+        [theme.breakpoints.down('sm')]:{
+            marginLeft: "auto"
+        }
     }
 }));
 
@@ -80,7 +93,8 @@ const menuItems = [
         listIcon: <ContactMail/>,
         listText: "Contact",
         listPath: "/contact"
-    }
+    },
+    
 ]
 
 const Navbar = () => {
@@ -91,6 +105,11 @@ const Navbar = () => {
     const toggleSlider = (slider, open) => () => {
         setState({...state, [slider]: open});
     };
+
+    //breakpoints
+    const theme = useTheme();
+
+    const isMatch = useMediaQuery(theme.breakpoints.down('sm'));
 
     const classes = useStyles();
 
@@ -116,24 +135,30 @@ const Navbar = () => {
         <Box component='nav'>
             <AppBar position='fixed' style={{background: 'black', opacity: '0.75'}}>
                 <Toolbar>
-                    <IconButton onClick={toggleSlider("right", true)}>
-                        <MenuIcon style={{color: 'white'}}></MenuIcon>
-                    </IconButton>
+                    
                     <Button component={Link} to={"/sbvg"}>
                         <img src={logo} className={classes.logoButton}></img>
                     </Button>
                     <Typography variant="h5" style={{color: 'white'}}>
                     </Typography>
-                    <MobilRightMenuSlider open={state.right} anchor="right" onClose={toggleSlider("right",false)}>
-                        {sideList("right")}
-                    </MobilRightMenuSlider>
+                    {isMatch ? (
+                        <>
+                        <IconButton className = {classes.menuIconSliderButton} onClick={toggleSlider("right", true)}>
+                            <MenuIcon style={{color: 'white'}}></MenuIcon>
+                        </IconButton>
+                        <MobilRightMenuSlider open={state.right} anchor="right" onClose={toggleSlider("right",false)}>
+                            {sideList("right")}
+                        </MobilRightMenuSlider>
+                        </>
+                    ) : (
                     <div className={classes.toolbar}>
                         {menuItems.map((lsItem, key)=>(
                         <Button color="inherit" key = {key} component={Link} to={lsItem.listPath} className={classes.menuButton}>
                             {lsItem.listText}
                         </Button>
                         ))}
-                    </div>
+                    </div> 
+                    )}
                 </Toolbar>
             </AppBar>
         </Box>

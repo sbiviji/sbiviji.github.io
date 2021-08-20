@@ -3,6 +3,8 @@ import Navbar from './Navbar'
 import Header from './Header'
 import {makeStyles} from '@material-ui/core/styles'
 import flowers from '../IMG_0609.JPG'
+import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
+
 
 
 const useStyles = makeStyles(theme => ({
@@ -24,8 +26,10 @@ const Home = () => {
     const classes = useStyles()
     return (
         <div className={classes.background}>
+            <MuiThemeProvider>
             <Navbar></Navbar>
             <Header></Header>
+            </MuiThemeProvider>
         </div>
     )
 }
