@@ -1,8 +1,9 @@
 import React from 'react'
 import Navbar from './Navbar'
 import { makeStyles } from '@material-ui/core/styles';
-import Box from "@material-ui/core/Box"
-import me from '../newContact.jpg'
+import Box from "@material-ui/core/Box";
+import me from '../newContact.jpg';
+import meSmall from '../newContactSmall.jpg';
 import { CardContent } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 import Grid from "@material-ui/core/Grid";
@@ -26,7 +27,7 @@ const useStyles = makeStyles(theme => ({
       
     },
     picture: {
-        backgroundImage:`url(${me})`,
+        backgroundImage:`url(${meSmall})`,
         height: '500px',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -44,7 +45,8 @@ const useStyles = makeStyles(theme => ({
         fontFamily: "Open Sans, sans-serif",
     },
     containerSmall:{
-        paddingTop: theme.spacing(3),
+        paddingTop: theme.spacing(2),
+        paddingBottom: theme.spacing(1),
         fontFamily: "Open Sans, sans-serif",
     },
     containerTitle: {
