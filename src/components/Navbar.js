@@ -28,6 +28,7 @@ import MenuIcon from "@material-ui/icons/Menu"
 import logo from '../sbvg_inverted.png'
 import useMediaQuery from "@material-ui/core/useMediaQuery"
 import {useTheme} from "@material-ui/core/styles"
+import { useLocation } from 'react-router-dom';
 
 // CSS STYLES 
 const useStyles = makeStyles(theme=>({
@@ -123,6 +124,8 @@ const Navbar = () => {
 
     const classes = useStyles();
 
+    const location = useLocation();
+
     const sideList = slider =>(
         <Box className={classes.menuSliderContainer} component="div" onclick={toggleSlider(slider,false)}>
             <img className = {classes.avatar} src={logo} alt="Shazeen"></img>
@@ -145,12 +148,10 @@ const Navbar = () => {
         <Box component='nav'>
             <AppBar position='fixed' style={{background: 'black', opacity: '0.75'}}>
                 <Toolbar>
-                    
-                    
                     {isMatch ? (
                         <>
                         {menuItems.map((lsItem, key)=>(
-                            <Typography className = {classes.pageName}>{window.location.pathname == lsItem.listPath ? lsItem.listText : ""}</Typography>
+                            <Typography className = {classes.pageName}>{location.pathname == lsItem.listPath ? lsItem.listText : ""}</Typography>
                         ))}
                         <IconButton className = {classes.menuIconSliderButton} onClick={toggleSlider("right", true)}>
                             <MenuIcon style={{color: 'white'}}></MenuIcon>

@@ -23,7 +23,8 @@ const useStyles = makeStyles(theme => ({
         minWidth: "320px",
         width: "100%",
         height: "auto",
-        minHeight: "auto"
+        minHeight: "auto",
+        alignSelf: "flex-start",
     },
     title: {
         color: "white",
