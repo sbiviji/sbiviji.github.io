@@ -21,7 +21,6 @@ const useStyles = makeStyles(theme => ({
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      
     },
     background: {
         backgroundColor: 'white',
@@ -31,16 +30,13 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1
     },
     containerTitle: {
-        
         paddingBottom: theme.spacing(3),
         justifyContent: "center",
         fontSize: "2.3rem",
-        
     },
     cardContent: {
         backgroundColor: "white",
         color: "black",
-        textTransform: "uppercase",
         fontFamily: "Open Sans, sans-serif",
         fontWeight: 700,
     },

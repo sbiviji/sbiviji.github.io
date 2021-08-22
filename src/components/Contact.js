@@ -56,6 +56,9 @@ const useStyles = makeStyles(theme => ({
     paragraph: {
         fontSize: "1.1rem",
         paddingBottom: theme.spacing(1),
+    },
+    cardShadow: {
+        boxShadow: "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)"
     }
 }));
 
@@ -73,7 +76,7 @@ const Contact = () => {
             <Container maxWidth="lg" className={classes.containerBig}>
                 <Grid container spacing={0}>
                     <Grid item xs={4}>
-                        <Card>
+                        <Card className={classes.cardShadow}>
                             <CardContent>
                             <Typography varient="h1" className={classes.containerTitle}>
                                 Book an Appointment 
@@ -115,7 +118,7 @@ const Contact = () => {
             <Container maxWidth="lg" className={classes.containerSmall}>
                 <Grid container spacing={0}>
                     <Grid item xs={12}>
-                        <Card>
+                        <Card className={classes.cardShadow}>
                             <CardContent>
                             <Typography varient="h1" className={classes.containerTitle}>
                                 Book an Appointment 
