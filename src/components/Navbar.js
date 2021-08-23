@@ -66,7 +66,7 @@ const useStyles = makeStyles(theme=>({
         marginLeft: "auto"
     },
     logoButton: {
-        maxHeight: "70px",
+        maxHeight: "50px",
         [theme.breakpoints.down('sm')]:{
             display: "none"
         }

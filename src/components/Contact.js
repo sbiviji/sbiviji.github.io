@@ -77,7 +77,7 @@ const Contact = () => {
             <div className={classes.root}>
             <Container maxWidth="lg" className={classes.containerBig}>
                 <Grid container spacing={0}>
-                    <Grid item xs={4}>
+                    <Grid item xs={6}>
                         <Card className={classes.cardShadow}>
                             <CardContent>
                             <Typography varient="h1" className={classes.containerTitle}>

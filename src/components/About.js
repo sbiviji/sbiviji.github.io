@@ -79,7 +79,7 @@ const About = () => {
                             I’m especially interested in portrait photography because I enjoy capturing people’s personalities through their expressions and body language in a given moment. I put a lot of thought into the composition of every photograph to reflect the authenticity of my subject. Each photoshoot has its own novelty - I get to meet new people, play with lighting, and find inspiring spaces. 
                             </Typography>
                             <Typography varient="h2" className={classes.paragraph}>
-                            Some fun facts about me are that I have a black belt in Tang Soo Do karate, my favorite city is Dubai, and I love catching a good sunrise. I’m currently learning how to rollerblade, and find that trying to slow down after building momentum is the hardest part. Additionally, I enjoy web and app development, having built this website myself using React. 
+                            Some fun facts about me are that I have a black belt in Tang Soo Do karate, my favorite city is Dubai, and I love catching a good sunrise. I’m currently learning how to rollerblade, and find that trying to slow down after building momentum is way harder than it looks. Additionally, I enjoy web and app development, having built this website myself using React. 
                             </Typography>
                             <Typography varient="h2" className={classes.paragraph}>
                             Don’t hesitate to reach out if you would like to schedule a photoshoot. I look forward to working with you! 
