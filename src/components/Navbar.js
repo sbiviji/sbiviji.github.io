@@ -88,7 +88,7 @@ const menuItems = [
     {
         listIcon: <Home/>,
         listText: "Home",
-        listPath: "/sbvg"
+        listPath: "/"
     },
     {
         listIcon: <Apps/>,
@@ -151,7 +151,7 @@ const Navbar = () => {
                     {isMatch ? (
                         <>
                         {menuItems.map((lsItem, key)=>(
-                            <Typography className = {classes.pageName}>{location.pathname == lsItem.listPath ? lsItem.listText : ""}</Typography>
+                            <Typography className = {classes.pageName}>{window.location.pathname == lsItem.listPath ? lsItem.listText : ""}</Typography>
                         ))}
                         <IconButton className = {classes.menuIconSliderButton} onClick={toggleSlider("right", true)}>
                             <MenuIcon style={{color: 'white'}}></MenuIcon>
@@ -162,14 +162,14 @@ const Navbar = () => {
                         </>
                     ) : (
                     <>
-                    <Button component={NavLink} to={"/sbvg"}>
+                    <Button component={NavLink} to={"/"} exact={true}>
                     <img src={logo} className={classes.logoButton}></img>
                     </Button>
                     <Typography variant="h5" style={{color: 'white'}}>
                     </Typography>
                     <div className={classes.toolbar}>
                         {menuItems.map((lsItem, key)=>(
-                        <Button color="inherit" key = {key} component={NavLink} to={lsItem.listPath} className={classes.menuButton}>
+                        <Button color="inherit" key = {key} component={NavLink} to={lsItem.listPath} exact={true} className={classes.menuButton}>
                             {lsItem.listText}
                         </Button>
                         ))}
