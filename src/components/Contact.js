@@ -54,10 +54,16 @@ const useStyles = makeStyles(theme => ({
         justifyContent: "center",
         fontSize: "2.4rem",
         fontWeight: 700, 
+        [theme.breakpoints.down("md")]: {
+            fontSize: "1.9rem"
+          }
     },
     paragraph: {
         fontSize: "1.1rem",
         paddingBottom: theme.spacing(1),
+        [theme.breakpoints.between("sm","md")]: {
+            fontSize: "1rem"
+          }
     },
     cardShadow: {
         boxShadow: "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)"

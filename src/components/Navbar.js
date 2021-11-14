@@ -128,7 +128,9 @@ const Navbar = () => {
 
     const sideList = slider =>(
         <Box className={classes.menuSliderContainer} component="div" onclick={toggleSlider(slider,false)}>
-            <img className = {classes.avatar} src={logo} alt="Shazeen"></img>
+            <Button component={NavLink} to={"/"} exact={true}>
+                <img className = {classes.avatar} src={logo} alt="Shazeen"></img>
+            </Button>
             <Divider></Divider>
             <List>
                 {menuItems.map((lsItem, key)=>(

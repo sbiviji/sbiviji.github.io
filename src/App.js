@@ -10,6 +10,9 @@ import {Route} from 'react-router-dom'
 function App() {
   return (
     <>
+      <head>
+        <meta property="og:image" content="sbvg_inverted_bgnd.png" />
+      </head>
       <CssBaseline>
         <Route exact path='/' component={Home}></Route>
         <Route path='/portfolio' component={Portfolio}></Route>
