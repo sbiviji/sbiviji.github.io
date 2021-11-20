@@ -22,7 +22,26 @@ import anisha_turn from '../images/IMG_1045.jpg'
 import nabiha_walk from '../images/IMG_1100.jpg'
 import nabiha_sit from '../images/IMG_1103.jpg'
 
+import divum_close from '../images/IMG_1201.jpg'
+import divum_middle from '../images/EDITED_IMG_1188.jpg'
+import divum_far from '../images/EDITED_IMG_1174.jpg'
+
 export const photos = [
+    {
+      src: divum_close,
+      width: 2048,
+      height: 1460
+    },
+    {
+      src: divum_far,
+      width: 1384,
+      height: 2048
+    },
+    {
+      src: divum_middle,
+      width: 1627,
+      height: 2048
+    },
     {
       src: anisha_leaf,
       width: 1365,
