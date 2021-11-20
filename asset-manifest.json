@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.2917f25f.chunk.css",
-    "main.js": "/static/js/main.9886b53e.chunk.js",
-    "main.js.map": "/static/js/main.9886b53e.chunk.js.map",
+    "main.js": "/static/js/main.8499ce90.chunk.js",
+    "main.js.map": "/static/js/main.8499ce90.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4eefa847.js",
     "runtime-main.js.map": "/static/js/runtime-main.4eefa847.js.map",
     "static/js/2.3672993e.chunk.js": "/static/js/2.3672993e.chunk.js",
@@ -18,6 +18,8 @@
     "static/media/DSCF3045.9d06ea5b.jpg": "/static/media/DSCF3045.9d06ea5b.jpg",
     "static/media/DSCF3058.71d360e6.jpg": "/static/media/DSCF3058.71d360e6.jpg",
     "static/media/DSCF3091.1d39efc2.jpg": "/static/media/DSCF3091.1d39efc2.jpg",
+    "static/media/EDITED_IMG_1174.95add015.jpg": "/static/media/EDITED_IMG_1174.95add015.jpg",
+    "static/media/EDITED_IMG_1203.94eae5ba.jpg": "/static/media/EDITED_IMG_1203.94eae5ba.jpg",
     "static/media/IMG_0609.29ac7a78.JPG": "/static/media/IMG_0609.29ac7a78.JPG",
     "static/media/IMG_0832-psp.f2ba7b3e.jpg": "/static/media/IMG_0832-psp.f2ba7b3e.jpg",
     "static/media/IMG_0930.d852e53e.jpg": "/static/media/IMG_0930.d852e53e.jpg",
@@ -28,6 +30,7 @@
     "static/media/IMG_1074.0fb0504f.jpg": "/static/media/IMG_1074.0fb0504f.jpg",
     "static/media/IMG_1100.f7370ed9.jpg": "/static/media/IMG_1100.f7370ed9.jpg",
     "static/media/IMG_1103.7034086c.jpg": "/static/media/IMG_1103.7034086c.jpg",
+    "static/media/IMG_1201.ae74a537.jpg": "/static/media/IMG_1201.ae74a537.jpg",
     "static/media/chicago_building.acce8b06.jpeg": "/static/media/chicago_building.acce8b06.jpeg",
     "static/media/contact.99afacfe.JPG": "/static/media/contact.99afacfe.JPG",
     "static/media/nabiha_face.59352588.jpeg": "/static/media/nabiha_face.59352588.jpeg",
@@ -43,6 +46,6 @@
     "static/js/runtime-main.4eefa847.js",
     "static/js/2.3672993e.chunk.js",
     "static/css/main.2917f25f.chunk.css",
-    "static/js/main.9886b53e.chunk.js"
+    "static/js/main.8499ce90.chunk.js"
   ]
 }
