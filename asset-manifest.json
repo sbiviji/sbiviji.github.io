@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.2917f25f.chunk.css",
-    "main.js": "/static/js/main.8499ce90.chunk.js",
-    "main.js.map": "/static/js/main.8499ce90.chunk.js.map",
+    "main.js": "/static/js/main.544fe680.chunk.js",
+    "main.js.map": "/static/js/main.544fe680.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4eefa847.js",
     "runtime-main.js.map": "/static/js/runtime-main.4eefa847.js.map",
     "static/js/2.3672993e.chunk.js": "/static/js/2.3672993e.chunk.js",
@@ -19,7 +19,7 @@
     "static/media/DSCF3058.71d360e6.jpg": "/static/media/DSCF3058.71d360e6.jpg",
     "static/media/DSCF3091.1d39efc2.jpg": "/static/media/DSCF3091.1d39efc2.jpg",
     "static/media/EDITED_IMG_1174.95add015.jpg": "/static/media/EDITED_IMG_1174.95add015.jpg",
-    "static/media/EDITED_IMG_1203.94eae5ba.jpg": "/static/media/EDITED_IMG_1203.94eae5ba.jpg",
+    "static/media/EDITED_IMG_1188.e2711a45.jpg": "/static/media/EDITED_IMG_1188.e2711a45.jpg",
     "static/media/IMG_0609.29ac7a78.JPG": "/static/media/IMG_0609.29ac7a78.JPG",
     "static/media/IMG_0832-psp.f2ba7b3e.jpg": "/static/media/IMG_0832-psp.f2ba7b3e.jpg",
     "static/media/IMG_0930.d852e53e.jpg": "/static/media/IMG_0930.d852e53e.jpg",
@@ -46,6 +46,6 @@
     "static/js/runtime-main.4eefa847.js",
     "static/js/2.3672993e.chunk.js",
     "static/css/main.2917f25f.chunk.css",
-    "static/js/main.8499ce90.chunk.js"
+    "static/js/main.544fe680.chunk.js"
   ]
 }
