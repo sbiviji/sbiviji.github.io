@@ -26,7 +26,104 @@ import divum_close from '../images/IMG_1201.jpg'
 import divum_middle from '../images/EDITED_IMG_1188.jpg'
 import divum_far from '../images/EDITED_IMG_1174.jpg'
 
+import jess_1 from '../images/IMG_1237.jpg'
+import jess_2 from '../images/IMG_1250.jpg'
+import jess_3 from '../images/IMG_1254.jpg'
+import jess_4 from '../images/IMG_1257.jpg'
+import jess_5 from '../images/IMG_1266.jpg'
+import jess_6 from '../images/IMG_1271.jpg'
+import jess_7 from '../images/IMG_1274.jpg'
+import jess_8 from '../images/IMG_1279.jpg'
+import jess_9 from '../images/IMG_1281.jpg'
+import jess_10 from '../images/IMG_1289.jpg'
+import jess_11 from '../images/IMG_1307.jpg'
+import jess_12 from '../images/IMG_1315.jpg'
+import jess_13 from '../images/IMG_1322.jpg'
+import jess_14 from '../images/IMG_1327.jpg'
+import jess_15 from '../images/IMG_1328.jpg'
+import jess_16 from '../images/IMG_1335.jpg'
+
 export const photos = [
+    {
+      src: jess_1,
+      width: 1414,
+      height: 2048
+    },
+    {
+      src: jess_2,
+      width: 1630,
+      height: 2048
+    },
+    {
+      src: jess_3,
+      width: 1365,
+      height: 2048
+    },
+    {
+      src: jess_4,
+      width: 1568,
+      height: 2048
+    },
+    {
+      src: jess_5,
+      width: 1365,
+      height: 2048
+    },
+    {
+      src: jess_6,
+      width: 1276,
+      height: 2048
+    },
+    {
+      src: jess_7,
+      width: 1671,
+      height: 2048
+    },
+    {
+      src: jess_8,
+      width: 1519,
+      height: 2048
+    },
+    {
+      src: jess_9,
+      width: 1678,
+      height: 2048
+    },
+    {
+      src: jess_10,
+      width: 1468,
+      height: 2048
+    },
+    {
+      src: jess_11,
+      width: 1490,
+      height: 2048
+    },
+    {
+      src: jess_12,
+      width: 1981,
+      height: 2048
+    },
+    {
+      src: jess_13,
+      width: 1536,
+      height: 2048
+    },
+    {
+      src: jess_14,
+      width: 1426,
+      height: 2048
+    },
+    {
+      src: jess_15,
+      width: 1471,
+      height: 2048
+    },
+    {
+      src: jess_16,
+      width: 1377,
+      height: 2048
+    },
     {
       src: divum_close,
       width: 2048,
